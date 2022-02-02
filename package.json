@@ -8,5 +8,7 @@
   },
   "author": "Adam Gipril <adam.gipril@ibotta.com>",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "dayjs": "^1.10.7"
+  }
 }
