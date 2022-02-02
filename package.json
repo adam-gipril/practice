@@ -8,5 +8,7 @@
   },
   "author": "Adam Gipril <adam.gipril@ibotta.com>",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
