@@ -14,18 +14,6 @@ module.exports = {
        */
       '@semantic-release/release-notes-generator',
       /**
-       * Executes custom shell commands.
-       *
-       * @see https://github.com/semantic-release/exec#readme
-       */
-      [
-        '@semantic-release/exec',
-        {
-          // Set a GitHub Actions output to make the release version available in our other steps
-          successCmd: 'echo "::set-output name=release_version::${nextRelease.version}"',
-        },
-      ],
-      /**
        * Publishes to NPM and updates the version number in package*.json files.
        * The actual publish step gets skipped due to `"private": true` in package.json.
        *
