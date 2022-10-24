@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log success!
-        run: echo "success! 🚀"
+        run: echo "success! 🚀 and fries! 🍟"
