@@ -1,0 +1,11 @@
+name: Launch
+on:
+  release:
+    types: [published]
+jobs:
+  launch:
+    name: Launch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log success!
+        run: echo "success! 🚀"
