@@ -21,4 +21,4 @@ jobs:
       - name: Release with semantic-release
         run: npx --no-install semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
