@@ -1,11 +1,18 @@
 name: Launch
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        description: Environment
+        required: true
   release:
-    types: [released]
+    types: released
 jobs:
   launch:
     name: Launch
     runs-on: ubuntu-latest
+    environment: ${{ github.event_name == 'release' && 'production' || inputs.environment }}
     steps:
       - name: Log success!
         run: echo "success! 🚀 and fries! 🍟"
