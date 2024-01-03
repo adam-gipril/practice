@@ -16,3 +16,11 @@ jobs:
     steps:
       - name: Log success!
         run: echo "success! 🚀 and fries! 🍟"
+      - name: Add job summary
+        run: echo "This is ${{ inputs.environment }}" >> $GITHUB_STEP_SUMMARY
+  summarize:
+    name: Summarize
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add job summary
+        run: echo "More summary" >> $GITHUB_STEP_SUMMARY
